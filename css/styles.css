@@ -22,7 +22,7 @@ body {
   margin: 0;
   color: var(--primary-text-color);
   background-color: var(--primary-background);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
 }
 
@@ -111,7 +111,7 @@ img {
 .logo,
 .footer-logo {
   color: var(--primary-text-color);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -184,7 +184,10 @@ img {
   margin-left: 0;
   margin-right: 0;
   background: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -319,7 +322,7 @@ img {
 }
 
 .team-description {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -347,20 +350,29 @@ img {
   padding-bottom: 30px;
 }
 
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+}
+
 .team-icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border: none;
   border-radius: 50%;
-  fill: var(--icon-color);
+  color: var(--icon-color);
+}
+
+.team-icon {
+  fill: currentColor;
 }
 
 .team-icon-link:hover,
 .team-icon-link:focus {
-  fill: var(--white-text-color);
+  color: var(--white-text-color);
   background-color: var(--link-color);
 }
 
@@ -371,21 +383,30 @@ img {
   gap: 30px;
 }
 
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  fill: var(--icon-color);
-  width: 170px;
-  height: 92px;
+  color: var(--icon-color);
+  width: 100%;
+  height: 100%;
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--link-color);
-  fill: var(--link-color);
+  color: var(--link-color);
 }
 
 /* ---------------------FOOTER----------------------- */
@@ -459,21 +480,30 @@ img {
   gap: 10px;
 }
 
+.footer-icon-item {
+  width: 44px;
+  height: 44px;
+}
+
 .footer-icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border: none;
   border-radius: 50%;
-  fill: var(--white-text-color);
+  color: var(--white-text-color);
   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: currentColor;
 }
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-  fill: var(--white-text-color);
+  color: var(--white-text-color);
   background-color: var(--link-color);
 }
 
