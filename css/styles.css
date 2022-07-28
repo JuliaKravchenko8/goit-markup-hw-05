@@ -168,7 +168,6 @@ img {
   color: var(--link-color);
 }
 .contacts-icon {
-  display: inline-block;
   margin-right: 10px;
   fill: currentColor;
 }
